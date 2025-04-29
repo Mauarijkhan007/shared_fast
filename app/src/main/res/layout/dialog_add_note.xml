@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imagePreview"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:background="#222222"
+            android:contentDescription="Note Image" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/buttonPickImage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Gallery" />
+
+            <Button
+                android:id="@+id/buttonCaptureImage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Camera" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/inputNoteTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter title"
+            android:textColor="@color/colorText"
+            android:textColorHint="#888888" />
+
+        <EditText
+            android:id="@+id/inputNoteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Write your note..."
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:textColor="@color/colorText"
+            android:textColorHint="#888888" />
+    </LinearLayout>
+</ScrollView>
